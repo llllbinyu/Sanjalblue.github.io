@@ -68,35 +68,19 @@
     </div>
 
     <div class="example-container">
-      <a-scene mindar-image="imageTargetSrc: ./assets/card-example/xiaqiao/xiaqiao.mind; showStats: true; autoStart: false; maxTrack: 6" embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-scene mindar-image="imageTargetSrc: ./assets/card-example/xiaoheshang/dianxin.mind; showStats: true; autoStart: false; maxTrack: 6" embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
-          <a-asset-item id="firstModel" src="./assets/card-example/xiaqiao/first_talk.glb"></a-asset-item>
-          <a-asset-item id="poemModel" src="./assets/card-example/xiaqiao/poem.glb"></a-asset-item>
-          <a-asset-item id="wordsModel" src="./assets/card-example/xiaqiao/words.glb"></a-asset-item>
-          <a-asset-item id="albumModel" src="./assets/card-example/xiaqiao/album.glb"></a-asset-item>
-          <a-asset-item id="endModel" src="./assets/card-example/xiaqiao/end.glb"></a-asset-item>
-          <a-asset-item id="giftModel" src="./assets/card-example/xiaqiao/gift.glb"></a-asset-item>
+          <a-asset-item id="xiaoheshang1" src="./assets/card-example/xiaoheshang/xiaoheshang1.glb"></a-asset-item>
+          <a-asset-item id="xiaoheshang2" src="./assets/card-example/xiaoheshang/xiaoheshang2.glb"></a-asset-item>
         </a-assets>
 
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
         <a-entity mindar-image-target="targetIndex: 0">
-          <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="1 1 1" src="#firstModel" animation-mixer>
+          <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.5 0.5 0.5" src="#xiaoheshang1" animation-mixer>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 1">
-          <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.3 0.3 0.3" src="#poemModel" animation-mixer>
-        </a-entity>
-        <a-entity mindar-image-target="targetIndex: 2">
-          <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.55 0.55 0.55" src="#wordsModel" animation-mixer>
-        </a-entity>
-        <a-entity mindar-image-target="targetIndex: 3">
-          <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.4 0.4 0.4" src="#albumModel" animation-mixer>
-        </a-entity>
-        <a-entity mindar-image-target="targetIndex: 4">
-          <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.2 0.2 0.2" src="#endModel" animation-mixer>
-        </a-entity>
-        <a-entity mindar-image-target="targetIndex: 5">
-          <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.5 0.5 0.5" src="#giftModel" animation-mixer>
+          <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.2 0.2 0.2" src="#xiaoheshang2" animation-mixer>
         </a-entity>
       </a-scene>
     </div>
